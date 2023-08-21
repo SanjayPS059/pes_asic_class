@@ -12,6 +12,8 @@ The objective of VLSI physical design for ASICsis to transform a digital circuit
 + Application Binary Interface
 + Labwork using ABI Function Calls
 # Introduction
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/759446a4-d2a3-4e5e-9617-f3ac7ec38700)
+
 
 **Basic Definition**
 + An Instruction Set Architecture (ISA) is part of the abstract model of a computer that defines how the CPU is controlled by the software. The ISA acts as an interface between the hardware and the software, specifying both what the processor is capable of doing as well as how it gets done.
@@ -23,16 +25,20 @@ The objective of VLSI physical design for ASICsis to transform a digital circuit
 4. **Assembler:** An assembler is a program or tool that translates assembly language code, a low-level human-readable representation of machine code instructions, into machine code that can be executed by a computer's CPU.
 5. **RTL (Register-Transfer Level):** RTL, or Register-Transfer Level, is a level of hardware description language used to model the behavior of digital circuits at a low level of abstraction. It specifies how data moves between registers and how logic operations are performed.
 6. **Hardware:** Hardware refers to the physical components of a computer system, including the CPU, memory, storage devices, input/output devices, and other electronic and mechanical components. It is the tangible, physical part of a computer system.
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/39173b2d-a131-4482-b9af-a721fe52fa60)
+
 
 # Detail description of course content
 1. **Pseudo Instructions** The pseudo instructions are provided by the assembler tools, which convert them into one or more real instructions. The most commonly used pseudo instruction is the LDR. This allows a 32-bit immediate data item to be loaded into a register.
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/01f2ec66-ac70-4cba-8eaa-cd590f702eb5)
 
 
-2. **Base Integer Instructions:** The term "base integer instructions" refers to the fundamental set of instructions that form the foundation for performing basic arithmetic, logical, and data movement operations.
-3. **Multiply Extension Intructions:** The RISC-V architecture includes a set of multiply and multiply-accumulate (MAC) extension instructions that enhance the instruction set to perform efficient multiplication and multiplication-accumulate operations.
-4. **Single and Double Precision Floating Point Extension:** The RISC-V architecture includes floating-point extensions that provide support for both single-precision (32-bit) and double-precision (64-bit) floating-point arithmetic operations. These extensions are often referred to as the "F" and "D" extensions, respectively. Floating-point arithmetic is essential for handling real numbers with fractional parts and for performing accurate calculations involving decimal values.
-5. **Application Binary Interface:** ABI stands for "Application Binary Interface." It is a set of rules and conventions that govern how software components interact with each other at the binary level. The ABI defines various aspects of program execution, including how function calls are made, how parameters are passed and returned, how memory is allocated and managed, and more.
-6. **Memory Allocation and Stack Pointer** 
+
+3. **Base Integer Instructions:** The term "base integer instructions" refers to the fundamental set of instructions that form the foundation for performing basic arithmetic, logical, and data movement operations.
+4. **Multiply Extension Intructions:** The RISC-V architecture includes a set of multiply and multiply-accumulate (MAC) extension instructions that enhance the instruction set to perform efficient multiplication and multiplication-accumulate operations.
+5. **Single and Double Precision Floating Point Extension:** The RISC-V architecture includes floating-point extensions that provide support for both single-precision (32-bit) and double-precision (64-bit) floating-point arithmetic operations. These extensions are often referred to as the "F" and "D" extensions, respectively. Floating-point arithmetic is essential for handling real numbers with fractional parts and for performing accurate calculations involving decimal values.
+6. **Application Binary Interface:** ABI stands for "Application Binary Interface." It is a set of rules and conventions that govern how software components interact with each other at the binary level. The ABI defines various aspects of program execution, including how function calls are made, how parameters are passed and returned, how memory is allocated and managed, and more.
+7. **Memory Allocation and Stack Pointer** 
 - Memory allocation refers to the process of assigning and managing memory segments for various data structures, variables, and objects used by a program. It involves allocating memory space from the system's memory pool and releasing it when it is no longer needed to prevent memory leaks.
 - The stack pointer is a register used by a program to keep track of the current position of the program's execution on the call stack.
 
@@ -79,7 +85,8 @@ Contents of the register can be viewed as shown in the image below
 + RISC-V doubleword can represent 0 to (2^(64) - 1) unsigned numbers or positive numbers
 
 + RISC-V doubleword can represent 0 to (2^(63) - 1)positive & (-1) to (-2^63) negative numbers
-+ 
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/2cf60202-a44b-46f6-9d0f-736a7d20136d)
+ 
 ##Lab
 **UnSigned 64-bit Number**
 ``` c
@@ -147,6 +154,7 @@ An Application Binary Interface (ABI) is a set of conventions or rules that gove
 In little-endian representation, you store the least significant byte (LSB) at the lowest memory address and the most significant byte (MSB) at the highest memory address.
 2. **Big-Endian:**
 In big-endian representation, you store the most significant byte (MSB) at the lowest memory address and the least significant byte (LSB) at the highest memory address.
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/91836fa9-f59b-4b8c-bb76-e9bfefba9f7b)
 
 ## Load, Add and Store Instructions
 Load, Add, and Store instructions are fundamental operations in computer architecture and assembly programming. They are often used to manipulate data within a computer's memory and registers.
@@ -158,6 +166,7 @@ In this Example
 - `x8` is the destination register.
 - `16(x23)` is the memory address pointed to by register `x5` (base address + offset).
 
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/99398a5d-e3ff-4068-84e8-f559cfba3978)
 
 Example `add x8, x24, x8`
 
@@ -165,6 +174,7 @@ In this Example
 - `add` is the add instruction.
 - `x8` is the destination register.
 - `x24` and `x8` are the source registers.
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/f9f75df1-2830-4237-97e6-f30486e347ea)
 
 
 ## 32-Registers and their ABI Names
@@ -173,9 +183,11 @@ The choice of the number of registers in a processor's architecture, such as the
 #### ABI Names
 ABI names for registers serve as a standardized way to designate the purpose and usage of specific registers within a software ecosystem. These names play a critical role in maintaining compatibility, optimizing code generation, and facilitating communication between different software components. 
 
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/412c9e15-2873-4685-9deb-714106b37d89)
 
 # LabWork using ABI function calls
 
+![image](https://github.com/SanjayPS059/pes_asic_class/assets/142580424/1bec0e26-3623-413b-991d-9777b5e98e55)
 
 **C Program**
 `custom1to9.c`
