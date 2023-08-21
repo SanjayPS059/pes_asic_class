@@ -56,12 +56,6 @@ type /main to go to the main section
 `/main`
 
 
-For -O1 optimization
-
-
-
-For -OFast optimization
-
 
 
 # Spike Simulation and Debug
